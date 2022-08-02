@@ -1,5 +1,5 @@
 import express from 'express';
-import { weatherRoute } from './src/routes';
+import { Routes } from './src/routes';
 
 const weatherApp = express();
 
@@ -7,12 +7,14 @@ const weatherApp = express();
 // TODO: Write jest unit tests
 // TODO: Write endpoints
 
-weatherApp.get('/', (req, res) => {
-  res.send('Hello Weather World!');
-});
+// weatherApp.get('/', (req, res) => {
+//   res.send('Hello Weather World!');
+// });
+
+const routes = new Routes();
 
 weatherApp.use(express.json());
-weatherApp.use('/api', weatherRoute);
+weatherApp.use('/api', routes.weatherRoutes);
 
 const port: number = 3000;
 weatherApp.listen(port, () => {

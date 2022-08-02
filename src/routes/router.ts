@@ -1,8 +1,11 @@
-import express from "express";
-import { weatherCoordinates } from "../controllers";
+import express from 'express';
+import { weatherCoordinates } from '../controllers';
 
 const router = express.Router();
 
-export function weatherRoute() {
-  router.get('/test', weatherCoordinates)
+export class Routes {
+  get weatherRoutes() {
+    router.get('/weather', weatherCoordinates);
+    return router;
+  }
 }
