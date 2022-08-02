@@ -1,5 +1,5 @@
 import Express from 'express';
-import { findWeatherData } from '../services';
+import { getWeatherData } from '../services';
 
 export async function weatherCoordinates(req: Express.Request, res: Express.Response) {
   const queryParams: Record<string, any> = req.query;
@@ -7,7 +7,7 @@ export async function weatherCoordinates(req: Express.Request, res: Express.Resp
     // TODO: error out here
     return;
   }
-  const weatherData = await findWeatherData(queryParams.lat, queryParams.lon);
+  const weatherData = await getWeatherData(queryParams.lat, queryParams.lon);
   //console.log(weatherData);
   res.status(200).json(weatherData);
 }
