@@ -8,6 +8,9 @@
     "test": "jest"
   },
   "jest": {
+    "modulePathIgnorePatterns": [
+      "build"
+    ],
     "roots": [
       "<rootDir>"
     ],
