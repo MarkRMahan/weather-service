@@ -24,6 +24,16 @@ Then, using an API platform like Postman or a browser, the user can make a GET r
 
 Be sure to insert your latitude and longitude with real coordinates.
 
+An example of a successful response will look like so:
+
+```json
+{
+  "weather": "Few Clouds",
+  "temperature": "Moderate",
+  "alerts": ["Heat Advisory"]
+}
+```
+
 ## Testing
 
 Testing is done using jest & babel. Once the necessary unit tests are set up, testing can be done by calling:
