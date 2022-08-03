@@ -12,3 +12,8 @@ export class Temperatures {
   public static moderate = 'Moderate';
   public static hot = 'Hot';
 }
+
+export class ErrorMessages {
+  public static coordinatesMissing =
+    'Missing inputs for latitude and/or longitude. Please input both latitude and longitude for a weather report.';
+}
