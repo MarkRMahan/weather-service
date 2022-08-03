@@ -1,5 +1,4 @@
 **/*.js
 **/*.js.map
-.env
 build
 node_modules
