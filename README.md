@@ -23,3 +23,11 @@ Then, using an API platform like Postman or a browser, the user can make a GET r
 `localhost:3000/api/weather?lat={latitude}&lon={longitude}`
 
 Be sure to insert your latitude and longitude with real coordinates.
+
+## Testing
+
+Testing is done using jest & babel. Once the necessary unit tests are set up, testing can be done by calling:
+
+```bash
+npm test
+```
