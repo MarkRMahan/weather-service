@@ -10,6 +10,16 @@ Use npm to install the necessary packages:
 npm install
 ```
 
+Also, this project uses the Open Weather API and needs an API key in order to grab and present the information.
+
+After creating an account at https://openweathermap.org/api and grabbing your unique API key, create a `.env` file at the root of the project and put this line in your file.
+
+```
+WEATHER_API_KEY={my-api-key}
+```
+
+Be sure to replace `{my-api-key}` with your unique key.
+
 ## Usage
 
 The project can be started up using the command:
